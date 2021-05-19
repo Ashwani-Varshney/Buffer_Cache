@@ -1,0 +1,450 @@
+
+HashQueue Details
+HashQueue 0 : {4, NID, L, NDW}
+HashQueue 1 : {1, NID, L, NDW}     {5, NID, L, NDW}
+HashQueue 2 : {2, NID, L, NDW}     {6, NID, L, NDW}
+HashQueue 3 : {3, NID, UL, NDW}
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{3, UL, NDW}
+-----------------------------------------------------------------------------------
+
+WaitingList Details
+
+WL 1 : Empty List
+WL 2 : Empty List
+WL 3 : Empty List
+WL 4 : Empty List
+WL 5 : Empty List
+WL 6 : Empty List
+WL 7 : Empty List
+WL 8 : Empty List
+WL 9 : Empty List
+WL 10 : Empty List
+WL 11 : Empty List
+WL 12 : Empty List
+WL 13 : Empty List
+Common WL  : Empty List
+-----------------------------------------------------------------------------------
+
+THREAD 1  CREATED!!
+
+THREAD 2  CREATED!!
+Thread ID : 1 Block Number requested : 12
+CASE 4 : Buffer at head in FREELIST without Delayed Write
+CASE 2 :Buffer in HASH QUEUE and FREELIST
+
+
+HashQueue Details
+HashQueue 0 : {4, NID, L, NDW}     {12, NID, L, NDW}
+HashQueue 1 : {1, NID, L, NDW}     {5, NID, L, NDW}
+HashQueue 2 : {2, NID, L, NDW}     {6, NID, L, NDW}
+HashQueue 3 : Empty List
+-----------------------------------------------------------------------------------
+
+FreeList Details
+Empty List
+-----------------------------------------------------------------------------------
+
+WaitingList Details
+
+WL 1 : Empty List
+WL 2 : Empty List
+WL 3 : Empty List
+WL 4 : Empty List
+WL 5 : Empty List
+WL 6 : Empty List
+WL 7 : Empty List
+WL 8 : Empty List
+WL 9 : Empty List
+WL 10 : Empty List
+WL 11 : Empty List
+WL 12 : Empty List
+WL 13 : Empty List
+Common WL  : Empty List
+-----------------------------------------------------------------------------------
+
+THREAD 1 RELEASED BUFFER 12
+
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{12, UL, NDW}
+-----------------------------------------------------------------------------------
+
+THREAD 3  CREATED!!
+Thread ID : 2 Block Number requested : 9
+CASE 4 : Buffer at head in FREELIST without Delayed Write
+CASE 2 :Buffer in HASH QUEUE and FREELIST
+
+
+HashQueue Details
+HashQueue 0 : {4, NID, L, NDW}
+HashQueue 1 : {1, NID, L, NDW}     {5, NID, L, NDW}     {9, NID, L, NDW}
+HashQueue 2 : {2, NID, L, NDW}     {6, NID, L, NDW}
+HashQueue 3 : Empty List
+-----------------------------------------------------------------------------------
+
+FreeList Details
+Empty List
+-----------------------------------------------------------------------------------
+
+WaitingList Details
+
+WL 1 : Empty List
+WL 2 : Empty List
+WL 3 : Empty List
+WL 4 : Empty List
+WL 5 : Empty List
+WL 6 : Empty List
+WL 7 : Empty List
+WL 8 : Empty List
+WL 9 : Empty List
+WL 10 : Empty List
+WL 11 : Empty List
+WL 12 : Empty List
+WL 13 : Empty List
+Common WL  : Empty List
+-----------------------------------------------------------------------------------
+
+THREAD 2 RELEASED BUFFER 9
+
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{9, UL, NDW}
+-----------------------------------------------------------------------------------
+
+THREAD 4  CREATED!!
+Thread ID : 3 Block Number requested : 2
+CASE 1 :Buffer in HASH QUEUE but not in FREELIST
+THREAD 3 IS GOING TO SLEEP ...
+
+THREAD INSERTED INTO WAITING LIST ..
+
+WaitingList Details
+
+WL 1 : Empty List
+WL 2 : {3 }
+WL 3 : Empty List
+WL 4 : Empty List
+WL 5 : Empty List
+WL 6 : Empty List
+WL 7 : Empty List
+WL 8 : Empty List
+WL 9 : Empty List
+WL 10 : Empty List
+WL 11 : Empty List
+WL 12 : Empty List
+WL 13 : Empty List
+Common WL  : Empty List
+-----------------------------------------------------------------------------------
+
+THREAD 5  CREATED!!
+Thread ID : 4 Block Number requested : 8
+CASE 4 : Buffer at head in FREELIST without Delayed Write
+CASE 2 :Buffer in HASH QUEUE and FREELIST
+
+
+HashQueue Details
+HashQueue 0 : {4, NID, L, NDW}     {8, NID, L, NDW}
+HashQueue 1 : {1, NID, L, NDW}     {5, NID, L, NDW}
+HashQueue 2 : {2, ID, L, NDW}     {6, NID, L, NDW}
+HashQueue 3 : Empty List
+-----------------------------------------------------------------------------------
+
+FreeList Details
+Empty List
+-----------------------------------------------------------------------------------
+
+WaitingList Details
+
+WL 1 : Empty List
+WL 2 : {3 }
+WL 3 : Empty List
+WL 4 : Empty List
+WL 5 : Empty List
+WL 6 : Empty List
+WL 7 : Empty List
+WL 8 : Empty List
+WL 9 : Empty List
+WL 10 : Empty List
+WL 11 : Empty List
+WL 12 : Empty List
+WL 13 : Empty List
+Common WL  : Empty List
+-----------------------------------------------------------------------------------
+
+THREAD 4 RELEASED BUFFER 8
+
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{8, UL, DW}
+-----------------------------------------------------------------------------------
+
+
+RELEASED BUFFER : 2
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{8, UL, DW}     {2, UL, NDW}
+-----------------------------------------------------------------------------------
+
+
+ THREAD  3 RESUMES EXECUTION........
+CASE 2 :Buffer in HASH QUEUE and FREELIST
+
+
+HashQueue Details
+HashQueue 0 : {4, NID, L, NDW}     {8, NID, UL, DW}
+HashQueue 1 : {1, NID, L, NDW}     {5, NID, L, NDW}
+HashQueue 2 : {2, NID, L, NDW}     {6, NID, L, NDW}
+HashQueue 3 : Empty List
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{8, UL, DW}
+-----------------------------------------------------------------------------------
+
+WaitingList Details
+
+WL 1 : Empty List
+WL 2 : Empty List
+WL 3 : Empty List
+WL 4 : Empty List
+WL 5 : Empty List
+WL 6 : Empty List
+WL 7 : Empty List
+WL 8 : Empty List
+WL 9 : Empty List
+WL 10 : Empty List
+WL 11 : Empty List
+WL 12 : Empty List
+WL 13 : Empty List
+Common WL  : Empty List
+-----------------------------------------------------------------------------------
+
+THREAD 3 RELEASED BUFFER 2
+
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{8, UL, DW}     {2, UL, DW}
+-----------------------------------------------------------------------------------
+Thread ID : 5 Block Number requested : 4
+CASE 1 :Buffer in HASH QUEUE but not in FREELIST
+THREAD 5 IS GOING TO SLEEP ...
+
+THREAD INSERTED INTO WAITING LIST ..
+
+WaitingList Details
+
+WL 1 : Empty List
+WL 2 : Empty List
+WL 3 : Empty List
+WL 4 : {5 }
+WL 5 : Empty List
+WL 6 : Empty List
+WL 7 : Empty List
+WL 8 : Empty List
+WL 9 : Empty List
+WL 10 : Empty List
+WL 11 : Empty List
+WL 12 : Empty List
+WL 13 : Empty List
+Common WL  : Empty List
+-----------------------------------------------------------------------------------
+
+THREAD 6  CREATED!!
+
+THREAD 7  CREATED!!
+Thread ID : 6 Block Number requested : 8
+CASE 5 : Buffer in HASH QUEUE and FREELIST with Delayed Write
+
+THREAD 6 PERFORMING ASYNCHRONOUS WRITE FOR BLOCK NUMBER 8CASE 2 :Buffer in HASH QUEUE and FREELIST
+
+
+HashQueue Details
+HashQueue 0 : {4, ID, L, NDW}     {8, NID, L, NDW}
+HashQueue 1 : {1, NID, L, NDW}     {5, NID, L, NDW}
+HashQueue 2 : {2, NID, UL, DW}     {6, NID, L, NDW}
+HashQueue 3 : Empty List
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{2, UL, DW}
+-----------------------------------------------------------------------------------
+
+WaitingList Details
+
+WL 1 : Empty List
+WL 2 : Empty List
+WL 3 : Empty List
+WL 4 : {5 }
+WL 5 : Empty List
+WL 6 : Empty List
+WL 7 : Empty List
+WL 8 : Empty List
+WL 9 : Empty List
+WL 10 : Empty List
+WL 11 : Empty List
+WL 12 : Empty List
+WL 13 : Empty List
+Common WL  : Empty List
+-----------------------------------------------------------------------------------
+
+THREAD 6 RELEASED BUFFER 8
+
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{2, UL, DW}     {8, UL, DW}
+-----------------------------------------------------------------------------------
+
+
+RELEASED BUFFER : 4
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{2, UL, DW}     {8, UL, DW}     {4, UL, NDW}
+-----------------------------------------------------------------------------------
+
+
+ THREAD  5 RESUMES EXECUTION........
+CASE 2 :Buffer in HASH QUEUE and FREELIST
+
+
+HashQueue Details
+HashQueue 0 : {4, NID, L, NDW}     {8, NID, UL, DW}
+HashQueue 1 : {1, NID, L, NDW}     {5, NID, L, NDW}
+HashQueue 2 : {2, NID, UL, DW}     {6, NID, L, NDW}
+HashQueue 3 : Empty List
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{2, UL, DW}     {8, UL, DW}
+-----------------------------------------------------------------------------------
+
+WaitingList Details
+
+WL 1 : Empty List
+WL 2 : Empty List
+WL 3 : Empty List
+WL 4 : Empty List
+WL 5 : Empty List
+WL 6 : Empty List
+WL 7 : Empty List
+WL 8 : Empty List
+WL 9 : Empty List
+WL 10 : Empty List
+WL 11 : Empty List
+WL 12 : Empty List
+WL 13 : Empty List
+Common WL  : Empty List
+-----------------------------------------------------------------------------------
+
+THREAD 5 RELEASED BUFFER 4
+
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{2, UL, DW}     {8, UL, DW}     {4, UL, NDW}
+-----------------------------------------------------------------------------------
+Thread ID : 7 Block Number requested : 7
+CASE 5 : Buffer in FREELIST with Delayed Write
+
+THREAD 7 PERFORMING ASYNCHRONOUS WRITE FOR BLOCK NUMBER 2
+JUMPING TO NEXT BUFFER IN FREELIST
+
+
+THREAD 7 PERFORMING ASYNCHRONOUS WRITE FOR BLOCK NUMBER 8
+JUMPING TO NEXT BUFFER IN FREELIST
+
+CASE 2 :Buffer in HASH QUEUE and FREELIST
+
+
+HashQueue Details
+HashQueue 0 : {8, NID, UL, NDW}
+HashQueue 1 : {1, NID, L, NDW}     {5, NID, L, NDW}
+HashQueue 2 : {2, NID, UL, NDW}     {6, NID, L, NDW}
+HashQueue 3 : {7, NID, L, NDW}
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{8, UL, NDW}    {2, UL, NDW}
+-----------------------------------------------------------------------------------
+
+WaitingList Details
+
+WL 1 : Empty List
+WL 2 : Empty List
+WL 3 : Empty List
+WL 4 : Empty List
+WL 5 : Empty List
+WL 6 : Empty List
+WL 7 : Empty List
+WL 8 : Empty List
+WL 9 : Empty List
+WL 10 : Empty List
+WL 11 : Empty List
+WL 12 : Empty List
+WL 13 : Empty List
+Common WL  : Empty List
+-----------------------------------------------------------------------------------
+
+THREAD 7 RELEASED BUFFER 7
+
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{8, UL, NDW}    {2, UL, NDW}    {7, UL, NDW}
+-----------------------------------------------------------------------------------
+
+THREAD 8  CREATED!!
+Thread ID : 8 Block Number requested : 11
+CASE 4 : Buffer at head in FREELIST without Delayed Write
+CASE 2 :Buffer in HASH QUEUE and FREELIST
+
+
+HashQueue Details
+HashQueue 0 : Empty List
+HashQueue 1 : {1, NID, L, NDW}     {5, NID, L, NDW}
+HashQueue 2 : {2, NID, UL, NDW}     {6, NID, L, NDW}
+HashQueue 3 : {7, NID, UL, NDW}     {11, NID, L, NDW}
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{2, UL, NDW}    {7, UL, NDW}
+-----------------------------------------------------------------------------------
+
+WaitingList Details
+
+WL 1 : Empty List
+WL 2 : Empty List
+WL 3 : Empty List
+WL 4 : Empty List
+WL 5 : Empty List
+WL 6 : Empty List
+WL 7 : Empty List
+WL 8 : Empty List
+WL 9 : Empty List
+WL 10 : Empty List
+WL 11 : Empty List
+WL 12 : Empty List
+WL 13 : Empty List
+Common WL  : Empty List
+-----------------------------------------------------------------------------------
+
+THREAD 8 RELEASED BUFFER 11
+
+-----------------------------------------------------------------------------------
+
+FreeList Details
+{2, UL, NDW}    {7, UL, NDW}    {11, UL, NDW}
+-----------------------------------------------------------------------------------
